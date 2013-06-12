@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:21:17
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:54:45
          compiled from CRM%5CContact%5CPage%5CDashBoard.tpl */ ?>
 
 <?php if (empty ( $this->_tpl_vars['hookContent'] )): ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:23:01
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:45:40
          compiled from CRM/common/formButtons.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'substring', 'CRM/common/formButtons.tpl', 32, false),array('modifier', 'crmReplace', 'CRM/common/formButtons.tpl', 34, false),array('modifier', 'crmBtnValidate', 'CRM/common/formButtons.tpl', 38, false),array('modifier', 'crmBtnType', 'CRM/common/formButtons.tpl', 39, false),array('modifier', 'crmAddClass', 'CRM/common/formButtons.tpl', 39, false),)), $this); ?>

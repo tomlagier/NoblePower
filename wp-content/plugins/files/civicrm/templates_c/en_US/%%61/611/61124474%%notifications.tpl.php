@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:21:17
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:44:53
          compiled from CRM/common/notifications.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'ts', 'CRM/common/notifications.tpl', 3, false),)), $this); ?>

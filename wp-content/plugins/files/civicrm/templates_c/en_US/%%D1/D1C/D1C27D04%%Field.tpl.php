@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:47:39
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:47:23
          compiled from CRM%5CUF%5CPage%5CField.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('block', 'ts', 'CRM\\UF\\Page\\Field.tpl', 28, false),array('function', 'crmURL', 'CRM\\UF\\Page\\Field.tpl', 41, false),array('function', 'cycle', 'CRM\\UF\\Page\\Field.tpl', 67, false),array('modifier', 'replace', 'CRM\\UF\\Page\\Field.tpl', 78, false),)), $this); ?>

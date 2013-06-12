@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:21:17
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:44:53
          compiled from CRM/common/Navigation.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'crmURL', 'CRM/common/Navigation.tpl', 30, false),array('function', 'crmKey', 'CRM/common/Navigation.tpl', 35, false),array('function', 'crmSetting', 'CRM/common/Navigation.tpl', 73, false),array('block', 'ts', 'CRM/common/Navigation.tpl', 32, false),)), $this); ?>
@@ -105,7 +105,7 @@ cj(function( ) {
 });
 
 '; ?>
-<?php if ($this->_tpl_vars['config']->userFramework != 'Joomla'): ?><?php echo '
+<?php if ($this->_tpl_vars['config']->userFramework != 'Joomla' && $this->_tpl_vars['config']->userFrameworkFrontend != 1): ?><?php echo '
   cj(\'body\').prepend( cj("#menu-container").html() );
 
   //Track Scrolling
@@ -119,7 +119,7 @@ cj(function( ) {
      cj(\'#civicrm-menu\').css({ \'width\': \'97%\' });
   }
 '; ?>
-<?php else: ?><?php echo '
+<?php elseif ($this->_tpl_vars['config']->userFrameworkFrontend != 1): ?><?php echo '
   // below div is present in older version of joomla 2.5.x
   var elementExists = cj(\'div#toolbar-box div.m\').length;
   if ( elementExists > 0 ) {

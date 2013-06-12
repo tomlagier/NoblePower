@@ -132,8 +132,8 @@ define('CIVICRM_LOGGING_DSN', CIVICRM_DSN);
 
 global $civicrm_root;
 
-$civicrm_root = 'C:\\wamp\\www\\NPE/wp-content/plugins\\civicrm\\civicrm\\';
-define( 'CIVICRM_TEMPLATE_COMPILEDIR', 'C:\\wamp\\www\\NPE/wp-content/plugins\\files\\civicrm\\templates_c\\' );
+$civicrm_root = 'C:\\wamp\\www\\NoblePower/wp-content/plugins\\civicrm\\civicrm\\';
+define( 'CIVICRM_TEMPLATE_COMPILEDIR', 'C:\\wamp\\www\\NoblePower/wp-content/plugins\\files\\civicrm\\templates_c\\' );
 
 /**
  * Site URLs:
@@ -160,7 +160,7 @@ define( 'CIVICRM_TEMPLATE_COMPILEDIR', 'C:\\wamp\\www\\NPE/wp-content/plugins\\f
  *      define( 'CIVICRM_UF_BASEURL' , 'http://www.example.com/joomla/' );
  *
  */
-define( 'CIVICRM_UF_BASEURL'      , 'http://localhost/NPE/' );
+define( 'CIVICRM_UF_BASEURL'      , 'http://localhost/NoblePower/' );
 
 /*
  * If you are using any CiviCRM script in the bin directory that
@@ -168,7 +168,7 @@ define( 'CIVICRM_UF_BASEURL'      , 'http://localhost/NPE/' );
  * We recommend using a 16-32 bit alphanumeric/punctuation key.
  * More info at http://wiki.civicrm.org/confluence/display/CRMDOC/Command-line+Script+Configuration
  */
-define( 'CIVICRM_SITE_KEY', 'fdbb5300e57192aac266b17a85af846b' );
+define( 'CIVICRM_SITE_KEY', '52e74f769e33f59dfde8efb6c3ceb9bb' );
 
 /*
  * If you want to disable IDS, set this to 0.
@@ -184,18 +184,13 @@ define( 'CIVICRM_MAIL_SMARTY', 0 );
 
 /**
  * This setting logs all emails to a file. Useful for debugging any mail (or civimail) issues.
- * This will not send any email, so ensure this is commented out in production
+ * Enabling this setting will not send any email, ensure this is commented out in production
+ * The CIVICRM_MAIL_LOG is a debug option which disables MTA (mail transport agent) interaction.
+ * You must disable CIVICRM_MAIL_LOG before CiviCRM will talk to your MTA.
  */
-// define( 'CIVICRM_MAIL_LOG', 'C:\\wamp\\www\\NPE/wp-content/plugins\\files\\civicrm\\templates_c\\/mail.log' );
+// define( 'CIVICRM_MAIL_LOG', 'C:\\wamp\\www\\NoblePower/wp-content/plugins\\files\\civicrm\\templates_c\\/mail.log' );
 
 define( 'CIVICRM_DOMAIN_ID'      , 1 );
-
-/**
- * For Wordpress users if your public pages are using a different template than the home page
- * you should set the name of the template with the below constant
- * This will be moved to a DB setting in a future version, check CRM-10682
- */
-// define( 'CIVICRM_UF_WP_BASEPAGE', 'YOUR TEMPLATE NAME HERE');
 
 /**
  * Settings to enable external caching using a Memcache server.  This is an

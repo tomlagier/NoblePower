@@ -33,7 +33,7 @@ blockquote,q{
 	quotes:none
 }
 blockquote:before,blockquote:after,q:before,q:after{
-	content:'';content:none
+	content:none;
 }
 table{
 	border-collapse:collapse;border-spacing:0
@@ -43,15 +43,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 }
 
 #sidebar{
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .sid{
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 #container, #branding{
-	margin-left: 0px;
+	margin-left: 0;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .homepage-slider{
@@ -68,7 +72,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 
 #sm-address-overlay, #slo-address-overlay{
     display: none;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .homepage-about{
@@ -96,10 +100,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
         display: none;   
     }
     body{
-        padding: 0px;   
+        padding: 0;
     }
     #wrapper{
-        padding: 0px;   
+        padding: 0;
     }
     #content{
         padding: 20px;   
@@ -167,7 +171,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     }
     
     #locations #sm-loc{
-        margin-left: 0px;   
+        margin-left: 0;
     }
 }
 
@@ -233,9 +237,9 @@ footer{
 }
 
 #s{
-    margin-bottom:0px;
+    margin-bottom:0;
     width:68%;
-    border-radius: 0px;
+    border-radius: 0;
     border: none;
     background: #e1e0dc;
     padding: 3px;
@@ -254,7 +258,7 @@ footer{
 #nav-tools{
     text-align: right;
     float: right;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 
@@ -282,7 +286,7 @@ footer{
     font-size: 1.6em;
     text-align: center;
     color: white;
-    margin: 0px;
+    margin: 0;
     
     background-image: -webkit-gradient(linear, center top, center bottom, from(#528ec2), to(#0e3377));
     background-image: -webkit-linear-gradient(top, #528ec2, #0e3377 100%);
@@ -301,7 +305,7 @@ footer{
 }
 
 .resp-main-menu, .resp-main-menu ul, .resp-main-menu li{
-    margin: 0px;   
+    margin: 0;
 }
 
 .resp-menu-slide-wrapper{
@@ -386,11 +390,11 @@ li a:hover, #resp-top-menu a:hover{
 }
 
 #menu-top-menu li:first-child{
-    margin-left: 0px;   
+    margin-left: 0;
 }
 
 #menu-footer-menu{
-    margin-left: 0px;   
+    margin-left: 0;
 }
 
 #menu-footer-menu li{
@@ -409,7 +413,6 @@ li a:hover, #resp-top-menu a:hover{
 .sub-menu{
     display: none;
     position: absolute;
-    background: ;
     width: 98.5%;
     margin:0px;
     border-radius: 0 0 4px 4px;
@@ -444,7 +447,7 @@ li a:hover, #resp-top-menu a:hover{
     background-image: linear-gradient(to bottom, #528ec2, #0e3377);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 1px;
 }
 
@@ -523,7 +526,7 @@ nav a:hover{
     background-image: linear-gradient(to bottom, #528ec2, #0e3377);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 1px; 
 }
 
@@ -540,7 +543,7 @@ nav a:hover{
     background-image: linear-gradient(to bottom, #528ec2, #0e3377);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 1px;
     
     margin: 0 0 10px 0;
@@ -549,7 +552,7 @@ nav a:hover{
     font-size: 1.4em;
 }
 
-#sidebar h3, #content .entry-title{
+#sidebar h3, #content .entry-title, #content .entry-title a{
     font-size: 1.4em;
     color: white;
     padding-left: 35px;
@@ -557,6 +560,10 @@ nav a:hover{
 }
 
 #text-4 .widget-title, #text-5 .widget-title{
+    display: none;
+}
+
+#text-4 .red-widget-title, #text-5 .red-widget-title{
     /*Background style from layerstyles.org*/
     background-image: -webkit-gradient(linear, center top, center bottom, from(#cc837a), to(#d21700));
     background-image: -webkit-linear-gradient(top, #cc837a, #d21700 100%);
@@ -567,9 +574,9 @@ nav a:hover{
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 1px;   
-
+    border-radius: 1px;
 }
+
 
 .homepage-about p, .homepage-facebook p{
        padding-left: 10px;
@@ -582,9 +589,9 @@ nav a:hover{
     background-image: -o-linear-gradient(top, #58b260, #17750d 100%);
     background-image: -ms-linear-gradient(top, #58b260, #17750d 100%);
     background-image: linear-gradient(to bottom, #58b260, #17750d);
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
     
     text-transform: uppercase;
     border: none;
@@ -668,7 +675,7 @@ nav a:hover{
 
 #site-logo{
     margin-top: 8px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #site-logo img{

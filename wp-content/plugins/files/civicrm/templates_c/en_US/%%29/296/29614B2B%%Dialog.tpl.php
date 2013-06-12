@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2013-06-07 22:50:23
+<?php /* Smarty version 2.6.27, created on 2013-06-12 17:48:59
          compiled from CRM/Core/I18n/Dialog.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'count', 'CRM/Core/I18n/Dialog.tpl', 26, false),array('function', 'crmURL', 'CRM/Core/I18n/Dialog.tpl', 27, false),)), $this); ?>
