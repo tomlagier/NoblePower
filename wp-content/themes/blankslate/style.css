@@ -56,6 +56,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 
 a:hover{
     text-decoration: none;
+    color:rgb(200, 200, 200);
+}
+
+a h3:hover, #sidebar .red-widget-title:hover, #crm-container .crm-submit-buttons input:hover{
+    color:rgb(200, 200, 200);
 }
 
 .homepage-slider{
@@ -73,14 +78,6 @@ a:hover{
 #sm-address-overlay, #slo-address-overlay{
     display: none;
     margin-left: 0;
-}
-
-.homepage-about{
-	background: #e1e0dc;
-}
-
-.homepage-facebook{
-	background: #e1e0dc;
 }
 
 .home .entry-title{
@@ -146,12 +143,16 @@ a:hover{
     #locations{
         margin-left: 115px;   
     }
+
+    #menu-top-menu .menu-item a{
+        font-size: .85em;
+    }
     
 }
 
 @media screen and (min-width: 1200px){
     #locations{
-       width: 530px;
+       width: 525px;
     }
 }
 
@@ -187,7 +188,7 @@ a:hover{
 
 @media screen and (min-width: 980px) and (max-width: 1050px){
     #branding #locations{
-        margin-left: 55px;   
+        margin-left: 40px;
     }
 }
 
@@ -474,6 +475,7 @@ li a:hover, #resp-top-menu a:hover{
     width: 100%;
     padding-top: 4px; 
     margin-bottom: -4px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
 #menu-main-menu > li > a:hover{
@@ -527,7 +529,8 @@ nav a:hover{
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 1px; 
+    border-radius: 1px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
 #text-2 .widget-title, #content .entry-title{
@@ -550,6 +553,7 @@ nav a:hover{
     padding-left: 15px;
     color: white;
     font-size: 1.4em;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
 #sidebar h3, #content .entry-title, #content .entry-title a{
@@ -557,13 +561,14 @@ nav a:hover{
     color: white;
     padding-left: 35px;
     line-height: 30px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
 #text-4 .widget-title, #text-5 .widget-title{
     display: none;
 }
 
-#text-4 .red-widget-title, #text-5 .red-widget-title{
+#text-4 .red-widget-title, #text-5 .red-widget-title, #crm-container .crm-submit-buttons .crm-button{
     /*Background style from layerstyles.org*/
     background-image: -webkit-gradient(linear, center top, center bottom, from(#cc837a), to(#d21700));
     background-image: -webkit-linear-gradient(top, #cc837a, #d21700 100%);
@@ -575,8 +580,27 @@ nav a:hover{
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.6), inset -5px -5px 10px rgba(0, 0, 0, 0.6);
     border-radius: 1px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
+#crm-container .crm-submit-buttons .crm-button{
+    border: none;
+    padding: 5px 15px;
+    margin-left: 5px;
+    border: none;
+}
+
+#crm-container .crm-submit-buttons .crm-button input{
+    font-family: 'Corbel', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#crm-container form .crm-submit-buttons{
+    height: 45px;
+    margin-left: 18%;
+    margin-bottom: 20px;
+}
 
 .homepage-about p, .homepage-facebook p{
        padding-left: 10px;
@@ -592,7 +616,8 @@ nav a:hover{
     -webkit-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.5), inset 2px 2px 6px rgba(255, 255, 255, 0.6), inset -2px -2px 6px rgba(0, 0, 0, 0.6);
-    
+
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
     text-transform: uppercase;
     border: none;
     border-radius: 1px;
@@ -670,7 +695,7 @@ nav a:hover{
 
 #locations{
     margin-top: 26px;
-    margin-left: 110px;
+    margin-left: 84px;
 }
 
 #site-logo{
@@ -710,4 +735,53 @@ nav a:hover{
 .powered-by-prp-img{
 	width: 63px;
 	vertical-align: top;
+}
+
+.crm-container .messages.help{
+    background: transparent;
+    border: none;
+    font-size: 1em;
+}
+
+.label{
+    background: transparent;
+    text-shadow: none;
+    color: #295795;
+}
+
+.label label{
+    font-weight: bold;
+    font-size: 1.4em;
+    white-space: normal;
+}
+
+/*Promo page responsiveness*/
+
+@media screen and (max-width: 850px){
+
+    .label label{
+        font-size: 1.2em;
+    }
+
+    .edit-value input, .edit-value select{
+        max-width: 90%;
+    }
+}
+
+#text-2 .textwidget, #text-3 .textwidget{
+    padding: 5px 10px;
+}
+
+/*Set up background greys and box shadows*/
+.homepage-about, .homepage-facebook, #text-2, #text-3, .page{
+    background: #e1e0dc;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.4);
+}
+
+.homepage-slider, .slider-overlay{
+    box-shadow: 3px 3px 4px rgba(0,0,0,.4);
+}
+
+.entry-content{
+    padding: 0 15px;
 }
