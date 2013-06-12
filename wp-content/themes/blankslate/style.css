@@ -14,6 +14,15 @@ body{
     font-family: 'Corbel', sans-serif;
 }
 
+.popup h2, .popup p{
+    font-family: 'Corbel', sans-serif;
+}
+
+.popup h2{
+    color: white;
+    text-shadow: -1px -1px 1px black;
+}
+
 #wrapper{
 	background-color: white;
 	margin: 0 auto;
@@ -59,7 +68,7 @@ a:hover{
     color:rgb(200, 200, 200);
 }
 
-a h3:hover, #sidebar .red-widget-title:hover, #crm-container .crm-submit-buttons input:hover, #translate-button:hover{
+a h3:hover, #sidebar .red-widget-title:hover, #crm-container .crm-submit-buttons input:hover, #translate-button:hover, .wpcf7-submit:hover, .phone-button:hover, #search #searchsubmit:hover{
     color:rgb(200, 200, 200);
 }
 
@@ -326,6 +335,7 @@ footer{
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+    border-radius: 1px;
 }
 
 .popup.opened {
@@ -338,11 +348,7 @@ footer{
 	position: relative;
 	margin: 20% auto;
 	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: rgb(200,200,200);
 }
 
 .close {
@@ -350,21 +356,23 @@ footer{
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
+	right: 5px;
 	text-align: center;
-	top: -10px;
+	top: 5px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+    opacity: .7;
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
+    text-shadow:none;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover {
+    background: #d21700;
+    opacity: .8;
+}
 
 .shown{
     display: block !important;   
@@ -568,7 +576,7 @@ nav a:hover{
     display: none;
 }
 
-#text-4 .red-widget-title, #text-5 .red-widget-title, #crm-container .crm-submit-buttons .crm-button{
+#text-4 .red-widget-title, #text-5 .red-widget-title, #crm-container .crm-submit-buttons .crm-button, .wpcf7-submit, .phone-button{
     /*Background style from layerstyles.org*/
     background-image: -webkit-gradient(linear, center top, center bottom, from(#cc837a), to(#d21700));
     background-image: -webkit-linear-gradient(top, #cc837a, #d21700 100%);
@@ -583,17 +591,28 @@ nav a:hover{
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.55);
 }
 
-#crm-container .crm-submit-buttons .crm-button{
+
+
+#crm-container .crm-submit-buttons .crm-button, .wpcf7-submit, .phone-button{
     border: none;
     padding: 5px 15px;
     margin-left: 5px;
     border: none;
 }
 
-#crm-container .crm-submit-buttons .crm-button input{
+#crm-container .crm-submit-buttons .crm-button input, .wpcf7-submit, .phone-button{
     font-family: 'Corbel', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+    color: white;
+}
+
+.phone-button{
+    width: 90%;
+}
+
+#call-slo{
+    margin-bottom: 8px;
 }
 
 #crm-container form .crm-submit-buttons{
@@ -743,7 +762,7 @@ nav a:hover{
     font-size: 1em;
 }
 
-.label{
+.label, .wpcf7-form p{
     background: transparent;
     text-shadow: none;
     color: #295795;
@@ -753,6 +772,10 @@ nav a:hover{
     font-weight: bold;
     font-size: 1.4em;
     white-space: normal;
+}
+
+.wpcf7-form p{
+    font-size: 1.1em;
 }
 
 /*Promo page responsiveness*/
@@ -768,7 +791,7 @@ nav a:hover{
     }
 }
 
-#crm-container.crm-public input[type="text"], #crm-container.crm-public select{
+#crm-container.crm-public input[type="text"], #crm-container.crm-public select, .wpcf7-form .wpcf7-form-control{
     border: none;
     border-radius: 1px;
     background-color: rgb(200,200,200);
@@ -784,7 +807,7 @@ nav a:hover{
     box-shadow: 3px 3px 4px rgba(0,0,0,.4);
 }
 
-.homepage-slider, .slider-overlay{
+.homepage-slider, .slider-overlay{                              ss
     box-shadow: 3px 3px 4px rgba(0,0,0,.4);
 }
 
@@ -822,4 +845,12 @@ nav a:hover{
 
 .flexslider .flex-direction-nav a{
     width: 24px;
+}
+
+.wpcf7-textarea{
+    width: 50%;
+}
+
+.wpcf7-text{
+    width: 35%;
 }

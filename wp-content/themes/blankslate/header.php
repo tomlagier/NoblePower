@@ -64,8 +64,8 @@
             <a title="Close" class="close">X</a>
             <h2>Call Now!</h2>
             <p>We have two locations. Call us at our San Luis Obispo or Santa Maria locations!</p>
-            <button id="call-sm" class="button phone-button" onclick='location.href="tel:8053491300"'>Call San Luis Obispo Location</button>
-            <button id="call-slo" class="button phone-button" onclick='location.href="tel:8055416090"'>Call Santa Maria Location</button>
+            <button id="call-slo" class="button phone-button" onclick='location.href="tel:8053491300"'>Call San Luis Obispo Location</button>
+            <button id="call-sm" class="button phone-button" onclick='location.href="tel:8055416090"'>Call Santa Maria Location</button>
         </div>
     </div>
 </div>
