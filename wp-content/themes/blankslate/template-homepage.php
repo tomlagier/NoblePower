@@ -16,7 +16,7 @@ the_post_thumbnail();
 } 
 ?>
 <div class="row-fluid">
-    <div class="homepage-slider span12">Slider goes here</div>
+    <div class="homepage-slider span12"><?php echo do_shortcode("[metaslider id=127]"); ?></div>
     <div id="sm-address-overlay" class="slider-overlay span12">Santa Maria address and map</div>
     <div id="slo-address-overlay" class="slider-overlay span12">SLO address and map</div>
 </div>

@@ -59,18 +59,17 @@ a:hover{
     color:rgb(200, 200, 200);
 }
 
-a h3:hover, #sidebar .red-widget-title:hover, #crm-container .crm-submit-buttons input:hover{
+a h3:hover, #sidebar .red-widget-title:hover, #crm-container .crm-submit-buttons input:hover, #translate-button:hover{
     color:rgb(200, 200, 200);
 }
 
 .homepage-slider{
-	height: 250px;
-	background-color: red;
+	height: 275px;
 	margin: 25px 0 15px 0;
 }
 
 .slider-overlay{
-    height: 250px;
+    height: 275px;
     background-color: green;
     margin: 25px 0 15px 0;
 }
@@ -416,7 +415,7 @@ li a:hover, #resp-top-menu a:hover{
     position: absolute;
     width: 98.5%;
     margin:0px;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 1px 1px;
     
     /*Background styling from layerstyles.org/builder.html*/
     
@@ -429,6 +428,7 @@ li a:hover, #resp-top-menu a:hover{
     -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3), inset 0 3px 3px rgba(0,0,0,0.4), inset 0 0 11px 4px #919294;
     -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3), inset 0 3px 3px rgba(0,0,0,0.4), inset 0 0 11px 4px #919294,;
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3), inset 0 3px 3px rgba(0,0,0,0.4), inset 0 0 11px 4px #919294;
+    z-index: 9999;
 }
 
 #menu-main-menu{
@@ -768,12 +768,18 @@ nav a:hover{
     }
 }
 
+#crm-container.crm-public input[type="text"], #crm-container.crm-public select{
+    border: none;
+    border-radius: 1px;
+    background-color: rgb(200,200,200);
+}
+
 #text-2 .textwidget, #text-3 .textwidget{
     padding: 5px 10px;
 }
 
 /*Set up background greys and box shadows*/
-.homepage-about, .homepage-facebook, #text-2, #text-3, .page{
+.homepage-about, .homepage-facebook, #text-2, #text-3, .type-page{
     background: #e1e0dc;
     box-shadow: 3px 3px 4px rgba(0,0,0,.4);
 }
@@ -782,6 +788,38 @@ nav a:hover{
     box-shadow: 3px 3px 4px rgba(0,0,0,.4);
 }
 
-.entry-content{
+.entry-content p{
     padding: 0 15px;
+}
+
+.home .page{
+    background: transparent;
+    box-shadow: none;
+}
+
+.crm-container .ui-icon-print{
+    display:none;
+}
+
+.flexslider .flex-control-nav{
+    bottom: 12px;
+}
+
+.flex-direction-nav a{
+    color: #d21700;
+}
+
+.flexslider .flex-control-paging li a{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+
+.flexslider .flex-control-paging li a.flex-active{
+    background-color: #d21700;
+}
+
+.flexslider .flex-direction-nav a{
+    width: 24px;
 }
